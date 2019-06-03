@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="gb2312"?>
+<VisualStudioPropertySheet
+	ProjectType="Visual C++"
+	Version="8.00"
+	Name="tesseract_setting"
+	>
+	<Tool
+		Name="VCCLCompilerTool"
+		AdditionalIncludeDirectories="..\..\api;..\..\ccmain;..\..\ccutil;..\..\ccstruct;..\..\classify;..\..\cube;..\..\cutil;..\..\dict;..\..\image;..\..\neural_networks\runtime;..\..\textord;..\..\viewer;..\..\wordrec;.;..\..\..\include;..\..\..\include\leptonica;..\port"
+		PreprocessorDefinitions="WIN32;_WINDOWS;_DEBUG;USE_STD_NAMESPACE;TESS_IMPORTS;LIBLEPT_IMPORTS"
+	/>
+	<Tool
+		Name="VCLinkerTool"
+		AdditionalDependencies="ws2_32.lib user32.lib liblept$(LIBLEPT_VERSION)d.lib"
+	/>
+</VisualStudioPropertySheet>
