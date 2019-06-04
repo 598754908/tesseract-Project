@@ -3,4 +3,4 @@ tessdata：包含了一个训练好的英文识别文件；
 tesseract-3.02.02-Win32： 已配置好的32位tessdata项目，编译可以直接得到对应的动态库和exe文件；
 tesseract-3.02.02-x64：   已配置好的64位tessdata项目，编译可以直接得到对应的动态库和exe文件；
 tesseract-3.02.02.zip     源码文件未进行任何配置
-其他具体配置可以参考windows-VS2008编译.md.mht以及子文件建项目说明						  
+其他具体配置可以参考windows-VS2008编译.md.mht以及子文件夹项目说明						  
