@@ -1,0 +1,19 @@
+1.VS2008目录下面有个readme文件，说明了如何编译其项目
+2.编译时，编译设置一般都是默认的（也可以自己更改但很易出错）
+	DLL_Debug：表示编译动态库的Debug形式
+	DLL_Release ：表示编译动态库的Release形式
+	LIB_Debug ：表示编译静态库的Debug形式
+	LIB_Release：表示编译静态库的Release形式
+	
+	一般如果只需要在程序中进行动态库调用，则只需要编译动态库（DLL_Debug），如果需要训练则需要编译训练的exe文件（LIB_Release）
+
+3.编译所需的依赖库文件和头文件已经根据默认配置将其放到正确的位置
+	leptonica包含了全部tesseract需要的lib和头文件等，下载后解压，将相应的include和lib放入与tesseract最外层的目录下面
+
+4.可能遇到的问题
+	（1）语法错误: 缺少“;”(在标识符“銆”的前面)
+	找到错误文件，单击VS的 文件–>高级保存选项，改变编码格式。（我这里是将“Unicode”改为了“简体中文（GB2312）- 代码页936”）
+	
+5.测试
+	编译dll完成后，会有一个dll文件和一个exe文件，执行
+	tesseract-dlld.exe -V 进行测试问题
